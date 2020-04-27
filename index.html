@@ -6,19 +6,25 @@ layout: default
   <!-- form does nothing right now -->
   <form action="process.php" method="POST">
  
-  <label>Country:</label>
-  <select name= "country">
-    <option value="France">France</option>
-    <option value="United States">United States</option>
-    <option value="Brazil">Brazil</option>
-    <option value="Spain">Spain</option>
+  <label>State:</label>
+  <select name= "state">
+    <option value="Louisiana">Louisiana</option>
+    <option value="California">California</option>
+    <option value="Brazil">Wyoming</option>
+    <option value="Spain">New York</option>
     </select>
+    <label>City:</label>
+    <select name="city">
+    <option value="Baton Rouge">Baton Rouge</option>
+    <option value="Lafayette">Lafayette</option>
+    <option value="New Orleans">New Orleans</option>
+    </select>  
+    
   </form>
   <br>
   <hr>
-  <!-- This is a hyper link to a plotly graph but will eventually be a part of the main page of the site, and will update according to the selected country and state-->
-  <!--<a href="city_baton_rouge.html">Baton Rouge Graph</a>-->
-  <iframe width="900" height = "700" frameborder = "0" scrolling = "no" src="city_baton_rouge.html"></iframe>
+    
+  <iframe width="900" height="700" frameborder = "0" scrolling = "no" src="city_baton_rouge.html"></iframe>
   <hr>
   <h3>Current infection rate of:</h3>
   <p> 3.56 </p>
