@@ -6,21 +6,19 @@ layout: default
   <!-- form does nothing right now -->
   <form action="process.php" method="POST">
  
-  <label>State:</label>
-  <select name= "state">
-    <option value="Louisiana">Louisiana</option>
-    <option value="California">California</option>
-    <option value="Brazil">Wyoming</option>
-    <option value="Spain">New York</option>
-    </select>
-    <label>City:</label>
-    <select name="city">
-    <option value="Baton Rouge">Baton Rouge</option>
-    <option value="Lafayette">Lafayette</option>
-    <option value="New Orleans">New Orleans</option>
-    </select>  
-    
-  </form>
+<label>State:</label>
+ <select name="state" class="states" id="stateId">
+    <option value="">Select State</option>
+</select>
+<label>City:</label>
+<select name="city" class="cities" id="cityId">
+ <option value="">Select City</option>
+</select>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+</select>  
+</form>
+
   <br>
   <hr>
     
