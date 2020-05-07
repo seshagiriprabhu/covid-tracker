@@ -31,7 +31,7 @@ function runFunction() {
 	var state_value = document.getElementById(stateId).value;
 	var city_value = document.getElementById(cityId).value;
 
-	var html_name = document.getElementById('mainFrame').src = city_value+"_"+state_value+".html";
+	document.getElementById('mainFrame').src = "city_"+city_value+"_"+state_value+".html";
 }
 </script>
 
