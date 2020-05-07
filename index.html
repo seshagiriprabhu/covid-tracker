@@ -9,13 +9,11 @@ layout: default
 <h2>United States:</h2>    
 <input type="hidden" name="country" id="countryId" value="US"/>
 <select name="state" class="states order-alpha" id="stateId">
-    <option value="">Select State</option>
+    <option value="" id = "">Select State</option>
 </select>
-
 <select name="city" class="cities order-alpha" id="cityId">
     <option value="">Select City</option>
 </select>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="//geodata.solutions/includes/statecity.js"></script>
   <br>
@@ -23,23 +21,21 @@ layout: default
   <iframe id ="mainFrame" width="900" height="700" frameborder = "0" scrolling = "no" src="cities/main.html"></iframe>
   <hr>
 
-<p>After selecting state and city, click run:</p>
-<button onclick ="runFunction()">Run</button>
-<script>
-function runFunction() {
-	var state_value = document.getElementById(stateId).value;
-	var city_value = document.getElementById(cityId).value;
-
-	var html_name = document.getElementById('mainFrame').src = city_value+"_"+state_value+".html";
-}
-</script>
+  <p>After selecting state and city, click run:</p>
+  <button onclick ="runFunction()">Run</button>
+  <script>
+  function runFunction() {
+   
+  document.getElementById("stateId").src = "value";
+  document.getElementById("cityId").src = "value"
+  document.getElementById("mainFrame").src = "cities/batonrouge.html";
+  
+  }
+  </script>
 
 
   
     
       
 </body>
-
-
-
 
