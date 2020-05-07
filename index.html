@@ -9,7 +9,7 @@ layout: default
 <h2>United States:</h2>    
 <input type="hidden" name="country" id="countryId" value="US"/>
 <select name="state" class="states order-alpha" id="stateId">
-    <option value="">Select State</option>
+    <option value="" id = "">Select State</option>
 </select>
 <select name="city" class="cities order-alpha" id="cityId">
     <option value="">Select City</option>
@@ -25,7 +25,11 @@ layout: default
   <button onclick ="runFunction()">Run</button>
   <script>
   function runFunction() {
+   
+  document.getElementById("stateId").src = "value";
+  document.getElementById("cityId").src = "value"
   document.getElementById("mainFrame").src = "cities/batonrouge.html";
+  
   }
   </script>
 
