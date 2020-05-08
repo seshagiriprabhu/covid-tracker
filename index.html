@@ -67,14 +67,14 @@
     </div>
 
     <script>
-function runFunction() {
+	function runFunction() {
 	var e = document.getElementById("stateId");
 	var state_value = e.options[e.selectedIndex].value;
 	
 	var g = document.getElementById("cityId");
 	var city_value = g.options[g.selectedIndex].value;
 
-	var state_abbr = abbrState(state_value, abbr);
+	var state_abbr = abbrState(state_value, "abbr");
 
 	var html_name = "cities/city_"+city_value+"_"+state_abbr+".html";
 	document.getElementById('mainFrame').src = html_name;
