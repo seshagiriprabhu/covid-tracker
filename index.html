@@ -13,7 +13,7 @@
  
 
     <title>COVID Infection Rate in the USA</title>
-  </head>
+ </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">COVID Tracker</a>
@@ -48,16 +48,15 @@
             </div>
         </div>
 
-        <select name="state" class="states" id="stateId">
-    		<option value="">Select State</option>
-		</select>
-		<select name="city" class="cities" id="cityId">
-    		<option value="">Select City</option>
-		</select>
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-		
-		<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+<input type="hidden" name="country" id="countryId" value="US"/>
+<select name="state" class="states order-alpha" id="stateId">
+    <option value="">Select State</option>
+</select>
+<select name="city" class="cities order-alpha" id="cityId">
+    <option value="">Select City</option>
+</select>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="//geodata.solutions/includes/statecity.js"></script>
 
 		 <button onclick ="runFunction()">View</button>
     
