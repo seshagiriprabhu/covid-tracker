@@ -74,7 +74,7 @@ function runFunction() {
 	var g = document.getElementById("cityId");
 	var city_value = g.options[g.selectedIndex].value;
 
-	state_abbr = abbrState(state_value, TO_ABBREVIATED);
+	var state_abbr = abbrState(state_value, TO_ABBREVIATED);
 
 	var html_name = "cities/city_"+city_value+"_"+state_abbr+".html";
 	document.getElementById('mainFrame').src = html_name;
