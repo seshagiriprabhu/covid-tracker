@@ -29,10 +29,10 @@ layout: default
 <script>
 function runFunction() {
 	var e = document.getElementById("stateId");
-	var state_value = e.options[e.selectedIndex].text;
+	var state_value = e.options[e.selectedIndex].value;
 	
 	var g = document.getElementById("cityId");
-	var city_value = g.options[g.selectedIndex].text;
+	var city_value = g.options[g.selectedIndex].value;
 
 	var html_name = city_value+"_"+state_value+".html";
 	document.getElementById('mainFrame').src = html_name;
