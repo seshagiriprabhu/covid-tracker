@@ -28,8 +28,11 @@ layout: default
 <button onclick ="runFunction()">Run</button>
 <script>
 function runFunction() {
-	var state_value = document.getElementById(stateId).value;
-	var city_value = document.getElementById(cityId).value;
+	var e = document.getElementById("stateId");
+	var state_value = e.options[e.selectedIndex].text;
+	
+	var g = document.getElementById("cityId");
+	var city_value = g.options[g.selectedIndex].text;
 
 	var html_name = city_value+"_"+state_value+".html";
 	document.getElementById('mainFrame').src = html_name;
